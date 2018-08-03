@@ -1,0 +1,397 @@
+{
+   "localization": {"group": {
+      "de": [
+         {
+            "value": "vSphere-Dashboards",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere-Konfiguration",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "Anwendungen",
+            "key": "Applications"
+         }
+      ],
+      "ko": [
+         {
+            "value": "vSphere 대시보드",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 구성",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "애플리케이션",
+            "key": "Applications"
+         }
+      ],
+      "zh-TW": [
+         {
+            "value": "vSphere 儀表板",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 組態",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "應用程式",
+            "key": "Applications"
+         }
+      ],
+      "ja": [
+         {
+            "value": "vSphere ダッシュボード",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere の構成",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "アプリケーション",
+            "key": "Applications"
+         }
+      ],
+      "en": [
+         {
+            "value": "vSphere Dashboards",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere Configuration",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "Applications",
+            "key": "Applications"
+         }
+      ],
+      "fr": [
+         {
+            "value": "Tableaux de bord vSphere",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "Configuration vSphere",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "Applications",
+            "key": "Applications"
+         }
+      ],
+      "zh-CN": [
+         {
+            "value": "vSphere 仪表板",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 配置",
+            "key": "vSphere Configuration"
+         },
+         {
+            "value": "应用程序",
+            "key": "Applications"
+         }
+      ]
+   }},
+   "entries": {
+      "resourceKind": [{
+         "resourceKindKey": "LoadBalancerEdgeService",
+         "internalId": "resourceKind:id:0_::_",
+         "adapterKindKey": "NSX"
+      }],
+      "resource": [
+         {
+            "resourceKindKey": "EdgeServicesGateway",
+            "internalId": "resource:id:1_::_",
+            "adapterKindKey": "NSX",
+            "identifiers": [
+               {
+                  "value": "edge-28",
+                  "key": "ID"
+               },
+               {
+                  "value": "5b498a94-5288-4533-bd38-23a7ff8bf783",
+                  "key": "VCID"
+               }
+            ],
+            "name": "srvload01"
+         },
+         {
+            "resourceKindKey": "LoadBalancerEdgeService",
+            "internalId": "resource:id:0_::_",
+            "adapterKindKey": "NSX",
+            "identifiers": [
+               {
+                  "value": "edge-28-loadBalancer",
+                  "key": "ID"
+               },
+               {
+                  "value": "5b498a94-5288-4533-bd38-23a7ff8bf783",
+                  "key": "VCID"
+               }
+            ],
+            "name": "srvload01 Load Balancer"
+         }
+      ]
+   },
+   "dashboards": [
+      {
+         "shared": false,
+         "temporary": false,
+         "creationTime": 1466960781420,
+         "autoswitchEnabled": false,
+         "importAttempts": 5,
+         "columnProportion": "0.3119507908611599-0.68804920913884-1",
+         "importComplete": true,
+         "description": "",
+         "columnCount": 3,
+         "widgets": [
+            {
+               "collapsed": false,
+               "x": 1,
+               "y": 1,
+               "id": "940651c8-4d52-4fd8-940f-f1b33004d323",
+               "type": "ContainerOverview",
+               "title": "Container Overview",
+               "config": {
+                  "resourceKind": null,
+                  "filterMode": {"filterMode": "resource"},
+                  "refreshInterval": 5,
+                  "refreshContent": {"refreshContent": true},
+                  "resources": [{
+                     "resourceId": "resource:id:0_::_",
+                     "resourceName": "srvload01 Load Balancer",
+                     "id": "extModel9711-1"
+                  }],
+                  "title": "Container Overview"
+               },
+               "height": 230,
+               "states": [{
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A171%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A42%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ewidth%25253Dn%2525253A40%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ewidth%25253Dn%2525253A56%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AmetricValue_%252525253A%252525253A_badge%252525257Cefficiency%2525255Edirection%2525253Ds%252525253ADESC",
+                  "key": "permContainerGrid_widget_c3bcc0cb-bb5f-4f69-96bd-4e59f246f075_940651c8-4d52-4fd8-940f-f1b33004d323"
+               }]
+            },
+            {
+               "collapsed": false,
+               "x": 3,
+               "y": 1,
+               "id": "e8034f3d-47fe-4f74-9676-143162de5537",
+               "type": "ProblemAlertsList",
+               "title": "Top Alerts",
+               "config": {
+                  "impactedBadge": "",
+                  "topIssuesDisplayLimit": 5,
+                  "refreshInterval": 30,
+                  "resource": {
+                     "resourceId": "resource:id:0_::_",
+                     "resourceName": "srvload01 Load Balancer"
+                  },
+                  "refreshContent": {"refreshContent": true},
+                  "selfProvider": {"selfProvider": false},
+                  "title": "Top Alerts",
+                  "triggeredObject": {"triggeredObject": "selfChildren"}
+               },
+               "height": 300
+            },
+            {
+               "collapsed": false,
+               "x": 2,
+               "y": 1,
+               "id": "471e9270-9e6a-401e-80c6-4883d596e6f2",
+               "type": "Scoreboard",
+               "title": "Load Balance Status",
+               "config": {
+                  "visualTheme": {"visualTheme": false},
+                  "refreshInterval": 5,
+                  "refreshContent": {"refreshContent": true},
+                  "valueSize": 24,
+                  "title": "Load Balance Status",
+                  "boxHeight": null,
+                  "showResourceName": {"showResourceName": false},
+                  "roundDecimals": null,
+                  "showMetricUnit": {"showMetricUnit": true},
+                  "mode": {"layoutMode": "fixedView"},
+                  "labelSize": 12,
+                  "metric": {
+                     "mode": "resource",
+                     "resourceMetrics": [],
+                     "resourceKindMetrics": []
+                  },
+                  "showSparkline": {"showSparkline": false},
+                  "boxColumns": 3,
+                  "periodLength": null,
+                  "selfProvider": {"selfProvider": false},
+                  "resInteractionMode": "load.xml"
+               },
+               "height": 230
+            }
+         ],
+         "userId": "29d0fa2d-57fd-4d3c-818a-a41dc3ebb1ce",
+         "isDefault": false,
+         "name": "NSX Load Balancer",
+         "rank": 74,
+         "disabled": false,
+         "id": "c3bcc0cb-bb5f-4f69-96bd-4e59f246f075",
+         "locked": false,
+         "widgetInteractions": [
+            {
+               "widgetIdProvider": "940651c8-4d52-4fd8-940f-f1b33004d323",
+               "type": "resourceId",
+               "widgetIdReceiver": "e8034f3d-47fe-4f74-9676-143162de5537"
+            },
+            {
+               "widgetIdProvider": "940651c8-4d52-4fd8-940f-f1b33004d323",
+               "type": "resourceId",
+               "widgetIdReceiver": "471e9270-9e6a-401e-80c6-4883d596e6f2"
+            }
+         ]
+      },
+      {
+         "shared": false,
+         "temporary": false,
+         "creationTime": 1466960781421,
+         "autoswitchEnabled": false,
+         "importAttempts": 48,
+         "columnProportion": "0.3543689320388349-0.645631067961165-1",
+         "importComplete": true,
+         "description": "",
+         "columnCount": 1,
+         "widgets": [
+            {
+               "collapsed": false,
+               "x": 2,
+               "y": 1,
+               "id": "20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad",
+               "type": "MetricPicker",
+               "title": "Métricas Produção",
+               "config": {
+                  "refreshInterval": 300,
+                  "refreshContent": {"refreshContent": true},
+                  "title": "Métricas Produção"
+               },
+               "height": 325,
+               "states": [
+                  {
+                     "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1",
+                     "key": "permMetricPicker_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchPropertyMetrics_permMetricPicker_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchCommonMetrics_permMetricPicker_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permFetchCollectingMetrics_permMetricPicker_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad"
+                  }
+               ]
+            },
+            {
+               "collapsed": false,
+               "x": 3,
+               "y": 1,
+               "id": "d1c7050a-e79d-4524-9139-7659ce7c4649",
+               "type": "MetricChart",
+               "title": "Gráficos Produção",
+               "config": {
+                  "resourceMetrics": [],
+                  "refreshInterval": 300,
+                  "refreshContent": {"refreshContent": false},
+                  "selfProvider": {"selfProvider": false},
+                  "title": "Gráficos Produção",
+                  "resInteractionMode": null
+               },
+               "height": 338,
+               "states": [
+                  {
+                     "value": "b%3A0",
+                     "key": "permBtn_zoomAllGraphs_permMetricChart_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_d1c7050a-e79d-4524-9139-7659ce7c4649"
+                  },
+                  {
+                     "value": "b%3A0",
+                     "key": "permBtn_pan_permMetricChart_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_d1c7050a-e79d-4524-9139-7659ce7c4649"
+                  },
+                  {
+                     "value": "o%3A",
+                     "key": "permMetricChart_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_d1c7050a-e79d-4524-9139-7659ce7c4649"
+                  },
+                  {
+                     "value": "s%3A%7B%22dateRange%22%3A%22last6Hour%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                     "key": "permDateRange1_permMetricChart_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_d1c7050a-e79d-4524-9139-7659ce7c4649"
+                  }
+               ]
+            },
+            {
+               "collapsed": false,
+               "x": 1,
+               "y": 1,
+               "id": "06674079-4a89-4c04-b402-1005a08a32d5",
+               "type": "ResourceRelationship",
+               "title": "NSX EDGE",
+               "config": {
+                  "tagFilter": {
+                     "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                     "value": {
+                        "bus": [],
+                        "adapterKind": [],
+                        "kind": ["resourceKind:id:0_::_"],
+                        "exclaim": false,
+                        "healthRange": [],
+                        "maintenanceSchedule": [],
+                        "adapterInstance": [],
+                        "collector": [],
+                        "tier": [],
+                        "state": [],
+                        "tag": [],
+                        "day": [],
+                        "status": []
+                     }
+                  },
+                  "resourceId": "resource:id:1_::_",
+                  "nodeSize": null,
+                  "refreshInterval": 300,
+                  "autoZoom": {"autoSize": false},
+                  "refreshContent": {"refreshContent": false},
+                  "resourceName": "srvload01",
+                  "selfProvider": {"selfProvider": true},
+                  "title": "NSX EDGE"
+               },
+               "height": 324,
+               "states": [{
+                  "value": "o%3A",
+                  "key": "permResourceRelationship_widget_000b75a7-da16-4c8e-8b06-84cad66ccbcd_06674079-4a89-4c04-b402-1005a08a32d5"
+               }]
+            }
+         ],
+         "userId": "29d0fa2d-57fd-4d3c-818a-a41dc3ebb1ce",
+         "isDefault": false,
+         "name": "NSX Load Balance - Metrics",
+         "rank": 75,
+         "disabled": false,
+         "id": "000b75a7-da16-4c8e-8b06-84cad66ccbcd",
+         "locked": false,
+         "widgetInteractions": [
+            {
+               "widgetIdProvider": "06674079-4a89-4c04-b402-1005a08a32d5",
+               "type": "resourceId",
+               "widgetIdReceiver": "20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad"
+            },
+            {
+               "widgetIdProvider": "20559b3a-cf1f-43ca-b7a8-6a91ae3ea9ad",
+               "type": "metricId",
+               "widgetIdReceiver": "d1c7050a-e79d-4524-9139-7659ce7c4649"
+            }
+         ]
+      }
+   ],
+   "uuid": "46086fa9-11b3-412a-a400-3952080ba3e6"
+}
